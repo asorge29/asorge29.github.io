@@ -2,9 +2,9 @@
 :root {
     --background: #1f2430;
     --white: #cccac2;
-    --blue: #4b88a2;
-    --purple: #d8ddef;
-    --green: #9CFC97;
+    --blue: #299edc;
+    --yellow: #ffc457;
+    --green: #d5ff70;
 }
 
 @font-face {
@@ -26,32 +26,49 @@
 body{
     background-color: var(--background);
     margin: 0;
-    padding: 0;
+    padding: 3%;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: row;
 }
-.greeting {
+.info {
     color: var(--white);
-    padding: 5%;
-    padding-right: 0;
     flex: 2;
 }
-.greeting h1 {
-    font-size: 16vmin;
-    margin: 0;
-}
-.greeting a {
+.info a {
     color: var(--white);
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: 0.05em;
 }
-.projects{
+.greeting h1 {
+    font-size: 16vmin;
+    margin: 0;
+}
+.about {
+    padding: 2%;
+    border: 0.3em dotted var(--blue);
+    border-radius: 20px;
+    margin: 1%;
+}
+.contact {
+    padding: 2%;
+    border: 0.3em dotted var(--green);
+    border-radius: 20px;
+    margin: 1%;
+}
+.projects {
     color: var(--white);
-    padding: 5%;
-    padding-left: 0;
     flex: 1;
     justify-content: center;
     text-align: center;
+    border: 0.3em dotted var(--yellow);
+    border-radius: 20px;
+    margin: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
 }
