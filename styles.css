@@ -2,9 +2,9 @@
 :root {
     --background: #1f2430;
     --white: #cccac2;
-    --blue: #299edc;
-    --yellow: #ffc457;
-    --green: #d5ff70;
+    --blue: #73d0ff;
+    --yellow: #ffd173;
+    --green: #d5ff80;
 }
 
 @font-face {
@@ -35,7 +35,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
 }
-.info a {
+a {
     color: var(--white);
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -54,11 +54,7 @@ body{
 .about {
     padding: 2%;
     flex: 1;
-    text-wrap: nowrap;
     text-align: center;
-}
-.about h2 {
-    display: inline;
 }
 .icon {
     font-family: 'Bootstrap-icons';
@@ -89,9 +85,54 @@ body{
     padding: 1%;
     flex-shrink: 0;
 }
-.projects {
+.github {
     color: var(--white);
     flex: 1;
-    background-color: purple;
     text-wrap: nowrap;
+}
+.repos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.repo-card {
+    border: solid 0.1em var(--white);
+    border-radius: 24px;
+    padding: 1%;
+    text-wrap: wrap;
+    width: 420px;
+    margin: 1%;
+}
+.repo-card i, .repo-card h4, .repo-card h3 {
+    display: inline;
+    margin: 0;
+}
+.repo-card h4 a {
+    display: block;
+    text-align: center;
+}
+.card-header {
+    border-bottom: solid 0.1em var(--white);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.edu-exp {
+    display: flex;
+    flex-flow: row wrap;
+}
+.education, .experience {
+    flex: 1;
+    padding: 2%;
+    color: var(--white);
+}
+.contact {
+    padding: 2%;
+    flex: 1;
+    text-wrap: nowrap;
+    text-align: center;
+}
+.contact h2 {
+    display: inline;
+    color: var(--white);
 }
