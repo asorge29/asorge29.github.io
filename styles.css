@@ -7,7 +7,6 @@
     --green: #d5ff80;
     scroll-behavior: smooth;
 }
-
 @font-face {
     font-family: 'JetBrains Mono Backup';
     src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2'),
@@ -15,7 +14,6 @@
         font-weight: normal;
         font-style: normal;
 }
-
 * {
     font-feature-settings:"ss02", "cv14", "cv16", "cv20";
     -webkit-font-feature-settings:"ss02" on, "cv14" on, "cv16" on, "cv20" on;
@@ -23,7 +21,6 @@
     text-rendering: optimizeLegibility;
     font-family: 'JetBrains Mono', 'JetBrains Mono Backup', 'Courier New', Courier, monospace;
 }
-
 body{
     background-color: var(--background);
     margin: 0;
@@ -152,6 +149,9 @@ a {
     padding: 2%;
     margin: 1%;
 }
+.card p {
+    text-align: center;
+}
 .card h3, .card h4, .card i {
     display: inline;
     margin: 0;
@@ -165,4 +165,16 @@ a {
 .contact h2 {
     display: inline;
     color: var(--white);
+}
+@media only screen and (max-width: 768px) {
+    .info {
+        flex-flow: column;
+    }
+    .edu-exp {
+        flex-flow: column;
+    }
+    .card-header {
+        justify-content: space-around;
+        align-items: flex-end;
+    }
 }
