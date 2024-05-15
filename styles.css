@@ -110,6 +110,9 @@ a {
     text-align: center;
     margin-bottom: 0;
 }
+.language h4 {
+    margin-left: -5px;
+}
 .repo-card h4 a {
     display: block;
     text-align: center;
