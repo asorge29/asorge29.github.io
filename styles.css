@@ -13,6 +13,7 @@
         url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
+        font-display: swap;
 }
 * {
     font-feature-settings:"ss02", "cv14", "cv16", "cv20";
