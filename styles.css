@@ -267,6 +267,15 @@ a {
     100% { opacity: 0; }
 }
 
+.info, .github, .edu-exp, .contact {
+    opacity: 0;
+    animation: fade-reveal 2s ease-in-out 2.6s forwards;
+}
+@keyframes fade-reveal {
+    from { opacity: 0; }
+    to { opacity: 1 }
+}
+
 @media only screen and (max-width: 768px) {
     .info {
         flex-flow: column;
