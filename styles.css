@@ -123,6 +123,9 @@ a {
     flex-flow: row wrap;
     justify-content: space-around;
 }
+.card-header h4:not([class]) {
+    margin-left: -5px;
+}
 .stats {
     text-align: center;
     margin-top: 0.5em;
