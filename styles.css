@@ -22,7 +22,7 @@
     text-rendering: optimizeLegibility;
     font-family: 'JetBrains Mono', 'JetBrains Mono Backup', 'Courier New', Courier, monospace;
 }
-body{
+body {
     background-color: var(--background);
     margin: 0;
     padding: 3%;
@@ -167,6 +167,81 @@ a {
     display: inline;
     color: var(--white);
 }
+
+#hi {
+    display: inline-block;
+    overflow: hidden;
+    animation: hi-typing 0.3s steps(3);
+}
+#hi-cursor {
+    font-size: 16vmin;
+    display: inline-block;
+    width: 1ch;
+    border-bottom: 0.1em solid var(--white);
+    animation: cursor-disappear 0.1s linear 0.3s forwards;
+}
+@keyframes hi-typing {
+    from { width: 0}
+    to { width: 3ch }
+}
+
+#andy {
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    animation: andy-typing 0.9s steps(9) 0.3s forwards;
+}
+#andy-cursor {
+    font-size: 16vmin;
+    display: inline-block;
+    width: 1ch;
+    opacity: 0;
+    border-bottom: 0.1em solid var(--white);
+    animation: 
+        cursor-appear 0.1s linear 0.3s forwards,
+        cursor-disappear 0.1s linear 1.2s forwards;
+}
+@keyframes andy-typing {
+    from { width: 0}
+    to { width: 9ch }
+}
+
+#apps {
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    animation: apps-typing 1.3s steps(13) 1.2s forwards;
+}
+#apps-cursor {
+    font-size: 16vmin;
+    display: inline-block;
+    width: 1ch;
+    opacity: 0;
+    border-bottom: 0.1em solid var(--white);
+    animation: 
+        cursor-appear 0.1s linear 1.2s forwards,
+        cursor-blink 0.8s 2.5s infinite;
+}
+@keyframes apps-typing {
+    from { width: 0 }
+    to { width: 13ch }
+}
+
+@keyframes cursor-appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes cursor-disappear {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes cursor-blink {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
 @media only screen and (max-width: 768px) {
     .info {
         flex-flow: column;
