@@ -110,6 +110,9 @@ a {
     text-align: center;
     margin-bottom: 0;
 }
+.language h4 {
+    margin-left: -5px;
+}
 .repo-card h4 a {
     display: block;
     text-align: center;
@@ -118,7 +121,10 @@ a {
     border-bottom: solid 0.1em var(--white);
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.card-header h4:not([class]) {
+    margin-left: -5px;
 }
 .stats {
     text-align: center;
@@ -284,7 +290,6 @@ a {
         flex-flow: column;
     }
     .card-header {
-        justify-content: space-around;
         align-items: flex-end;
     }
 }
