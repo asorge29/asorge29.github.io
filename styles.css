@@ -5,6 +5,7 @@
     --blue: #73d0ff;
     --yellow: #ffd173;
     --green: #d5ff80;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -27,7 +28,6 @@ body{
     background-color: var(--background);
     margin: 0;
     padding: 3%;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .info {
     color: var(--white);
@@ -107,6 +107,11 @@ a {
     display: inline;
     margin: 0;
 }
+.repo-card p {
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+}
 .repo-card h4 a {
     display: block;
     text-align: center;
@@ -116,6 +121,14 @@ a {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+}
+.stats {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.stats h5 {
+    display: inline;
 }
 .edu-exp {
     display: flex;
