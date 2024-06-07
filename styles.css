@@ -143,6 +143,15 @@ a {
     padding: 2%;
     color: var(--white);
 }
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.badge {
+    height: 7vmax;
+}
 .cards {
     display: flex;
     flex-flow: column;
